@@ -1,0 +1,25 @@
+The data set is a CSV file called `f500.csv`. Here is a data dictionary for some of the columns in the CSV:
+
+- `company`: Name of the company.
+- `rank`: Global 500 rank for the company.
+- `revenues`: Company's total revenue for the fiscal year, in millions of dollars (USD).
+- `revenue_change`: Percentage change in revenue between the current and prior fiscal year.
+- `profits`: Net income for the fiscal year, in millions of dollars (USD).
+- `ceo`: Company's Chief Executive Officer.
+- `industry`: Industry in which the company operates.
+- `sector`: Sector in which the company operates.
+- `previous_rank`: Global 500 rank for the company for the prior year.
+- `country`: Country in which the company is headquartered.
+
+Similar to the import convention for NumPy (import numpy as np), the import convention for pandas is:
+
+import pandas as pd
+
+In the `script.py` code editor for this screen, we have already imported pandas and used the `pandas.read_csv()` [function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) to read the CSV into a dataframe and assign it to the variable name `f500`. We'll learn about `read_csv()` later in this course, but for now, all you need to know is that it automatically handles reading and parsing most CSV files.
+
+Like NumPy's ndarrays, pandas' dataframes have a `.shape` attribute which returns a tuple representing the dimensions of each axis of the object. We'll use that and Python's `type() function` to inspect the `f500` dataframe.
+instructions
+
+1. Use Python's `type()` function to assign the type of `f500` to `f500_type`.
+2. Use the `DataFrame.shape` attribute to assign the shape of `f500` to `f500_shape`.
+3. After you have run your code, use the variable inspector to look at the variables `f500`, `f500_type`, and `f500_shape`.
