@@ -1,0 +1,16 @@
+The dataset contains data from January 4 until July 31. Each row describes the COVID-19 report for one day in one specific country (the first few rows show only China because the virus was only present in China at that time).
+
+For each row, we have the following data points:
+
+`Date_reported`: The date when the data was reported in year-month-day format.
+`Country`: The country to which the report corresponds.
+`New_cases`: The number of new cases reported for that date and for that country.
+`Cumulative_cases`: The number of total cases up to that date in that country.
+`New_deaths`: The number of new deaths reported for that date and for that country.
+`Cumulative_deaths`: The number of total deaths up to that day in that country.
+
+The rows in our dataset are listed in time order, starting with January 4 and ending with July 31. We call a series of data points that is listed in time order a time series.
+
+Typically we visualize time series with line graphs. The time values are always plotted, by convention, on the x-axis.
+
+Let's read in our dataset in the following exercise.
